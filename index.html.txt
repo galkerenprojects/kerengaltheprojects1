@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>קרן וגל פרויקטים</title>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #002b5c;
+      --accent-color: #ffbe5c;
+      --bg-color: #001e3c;
+      --text-color: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Assistant', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      text-align: center;
+    }
+    header {
+      background-color: var(--main-color);
+      padding: 2rem;
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    nav {
+      background-color: var(--main-color);
+      padding: 1rem;
+    }
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: var(--accent-color);
+    }
+    main {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      text-align: right;
+    }
+    .step {
+      background-color: #013467;
+      border-right: 4px solid var(--accent-color);
+      padding: 1.5rem;
+      border-radius: 8px;
+      position: relative;
+    }
+    .step::before {
+      content: counter(step);
+      counter-increment: step;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: var(--accent-color);
+      color: black;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      border-radius: 50%;
+    }
+    .steps {
+      counter-reset: step;
+    }
+    a.button {
+      background: var(--accent-color);
+      color: black;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    a.button:hover {
+      background: #f0aa4b;
+    }
+    footer {
+      background-color: #001326;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Simple_line_logo.svg/512px-Simple_line_logo.svg.png" alt="לוגו קרן וגל" class="logo">
+    <h1>קרן וגל פרויקטים</h1>
+    <p>ליווי מקיף, יצירתי וחד לפתיחת עסקי אוכל וקפה</p>
+  </header>
+
+  <nav>
+    <a href="#about">עלינו</a>
+    <a href="#process">שלבי הליווי</a>
+    <a href="#contact">צור קשר</a>
+    <a href="#academy">האקדמיה</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>מי אנחנו</h2>
+      <p>
+        אנחנו קרן וגל – צוות יצירתי, ישיר ומדויק שליווה עשרות בתי קפה, מאפיות ומסעדות מהרגע שבו היה רק רעיון – ועד הרגע שבו נפתחו הדלתות. אנחנו חיים את השטח, מבינים יזמות אמיתית, ולא מוכרים חלומות אלא מגשימים אותם ביחד.
+      </p>
+    </section>
+
+    <section id="process">
+      <h2>שלבי הליווי</h2>
+      <div class="steps">
+        <div class="step"><strong>איתור לוקיישן:</strong> בחירת מיקום אסטרטגי שמתאים לקונספט ולתקציב.</div>
+        <div class="step"><strong>בניית קונספט:</strong> פיתוח זהות ייחודית: תפריט, סגנון, קהל יעד.</div>
+        <div class="step"><strong>מיתוג:</strong> שם, לוגו, שפה עיצובית ושילוט.</div>
+        <div class="step"><strong>תכנון ובינוי:</strong> תכנון מקצועי של חלל העבודה, ציוד ותשתיות.</div>
+        <div class="step"><strong>רישוי וביטוחים:</strong> ליווי מלא בכל שלבי האישורים מול הרשויות.</div>
+        <div class="step"><strong>ספקים ותמחור:</strong> בניית תפריט רווחי, פודקוסט, ועבודה עם ספקים.</div>
+        <div class="step"><strong>הקמה:</strong> מערכות קופה, תפעול וניהול.</div>
+        <div class="step"><strong>עיצוב אווירה:</strong> בחירת ריהוט, מוזיקה, תאורה, כלים.</div>
+        <div class="step"><strong>גיוס עובדים:</strong> צוות, הכשרות והדרכה בשטח.</div>
+        <div class="step"><strong>פתיחה וליווי:</strong> שבוע ראשון של פתיחה – איתכם פיזית ומנטלית.</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>רוצים לדבר?</h2>
+      <p>בואו נבדוק אם אנחנו מתאימים אחד לשני. פגישת היכרות ראשונה – עלינו.</p>
+      <a href="mailto:hello@kerengal.co.il" class="button">כתבו לנו</a>
+    </section>
+
+    <section id="academy">
+      <h2>האקדמיה</h2>
+      <p>בקרוב: סדנאות, הרצאות וכלים דיגיטליים לפתיחת עסק – גם למי שרוצה להתחיל לבד. האקדמיה שלנו נבנית ממש עכשיו.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 קרן וגל פרויקטים | כל הזכויות שמורות
+  </footer>
+</body>
+</html>
